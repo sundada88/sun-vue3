@@ -2,7 +2,7 @@ const targetMap = new WeakMap()
 let activeEffect
 
 // 收集依赖
-export function track (target, key) {
+export function track(target, key) {
   let depsMap = targetMap.get(target)
   if (!depsMap) {
     targetMap.set(target, (depsMap = new Map()))
@@ -15,7 +15,7 @@ export function track (target, key) {
 }
 
 // 触发依赖
-export function trigger (target, key) {
+export function trigger(target, key) {
   let depsMap = targetMap.get(target)
   if (!depsMap) return
   let deps = depsMap.get(key)
@@ -25,7 +25,7 @@ export function trigger (target, key) {
   })
 }
 
-export function effect (fn) {
+export function effect(fn) {
   activeEffect = fn
   fn()
 }

@@ -2,7 +2,7 @@
 
 Object.defineProperty(exports, '__esModule', { value: true });
 
-const shared = {};
+const isObject = (val) => val !== null && typeof val === 'object';
 
-exports.shared = shared;
+exports.isObject = isObject;
 //# sourceMappingURL=shared.cjs-bundler.js.map

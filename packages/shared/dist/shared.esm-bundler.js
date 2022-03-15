@@ -1,4 +1,4 @@
-const shared = {};
+const isObject = (val) => val !== null && typeof val === 'object';
 
-export { shared };
+export { isObject };
 //# sourceMappingURL=shared.esm-bundler.js.map

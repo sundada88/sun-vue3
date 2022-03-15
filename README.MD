@@ -7,6 +7,8 @@
   - [ ] reactive
 
     - [ ] reactive support dep collect
+    - [ ] proxy object
+    - [ ] proxy array
 
   - [ ] readonly
 
